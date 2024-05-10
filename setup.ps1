@@ -1,5 +1,4 @@
-New-LocalUser -Name MultiAppKioskUser -AccountNeverExpires -NoPassword -UserMayNotChangePassword | Out-null
-
+net user MutliAppKioskUser /add /passwordchg:NO /passwordreq:no /active:yes
 function Create-Links() {
   param(
     [string]$name,
