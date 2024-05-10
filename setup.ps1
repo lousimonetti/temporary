@@ -23,10 +23,10 @@ function Create-Links() {
 }
 $profile =[Environment]::GetFolderPath('CommonDesktopDirectory')
 $url = "https://recv.azurewebsites.net"
-Create-ESWPLinks -url $url -name "ESWP"
+Create-Links -url $url -name "ESWP"
 $path = "$($profile)\ESWP.lnk"
-Create-ESWPLinks -url $url -name "ESWP" -path $path
-Create-ESWPLinks -url "$($url)/receiverdashboard" -name "Dashboard"
+Create-Links -url $url -name "ESWP" -path $path
+Create-Links -url "$($url)/receiverdashboard" -name "Dashboard"
 $path = "$($profile)\Dashboard.lnk"
-Create-ESWPLinks -url "$($url)/receiverdashboard" -name "Dashboard" -path $path
+Create-Links -url "$($url)/receiverdashboard" -name "Dashboard" -path $path
 
