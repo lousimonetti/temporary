@@ -15,7 +15,7 @@ function Create-Links() {
       $Shortcut.Arguments = "--kiosk $($url) --edge-kiosk-type=public-browsing"
       $Shortcut.Save()
   }
-  if[Test-Path -Path 'C:\Users\Public\Desktop\Microsoft Edge.lnk')
+  if(Test-Path -Path 'C:\Users\Public\Desktop\Microsoft Edge.lnk')
   {
     Remove-Item -Path 'C:\users\Public\Desktop\Microsoft Edge.lnk' -Force
   }
