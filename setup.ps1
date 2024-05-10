@@ -1,4 +1,4 @@
-net user MutliAppKioskUser /add /passwordchg:NO /passwordreq:no /active:yes
+net user MultiAppKioskUser /add /passwordchg:NO /passwordreq:no /active:yes
 function Create-Links() {
   param(
     [string]$name,
