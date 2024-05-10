@@ -1,3 +1,5 @@
+New-LocalUser -Name MultiAppKioskUser -AccountNeverExpires -NoPassword -UserMayNotChangePassword | Out-null
+
 function Create-Links() {
   param(
     [string]$name,
