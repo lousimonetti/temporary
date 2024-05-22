@@ -1,4 +1,8 @@
 net user MultiAppKioskUser /add /passwordchg:NO /passwordreq:no /active:yes
+<# do need to name this acocunt something else like kioskuser ?  or can this be done via intune policy???? #> 
+
+<# some logic to set autologin using that account here #> 
+
 function Create-Links() {
   param(
     [string]$name,
@@ -28,4 +32,3 @@ Create-Links -url $url -name "ESWP" -path $path
 Create-Links -url "$($url)/receiverdashboard" -name "Dashboard"
 $path = "$($profile)\Dashboard.lnk"
 Create-Links -url "$($url)/receiverdashboard" -name "Dashboard" -path $path
-
